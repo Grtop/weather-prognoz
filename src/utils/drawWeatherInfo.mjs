@@ -1,7 +1,7 @@
 const YANDEX_API_KEY = 'e262e3b3-7e57-43dc-8bac-de380aa7f6c1';
 
 export function drawWeatherInfo (el, data) {
- const mapUrl = `https://static-maps.yandex.ru/v1?apikey=${YANDEX_API_KEY}&l=map&ll=${data.coord.lon},${data.coord.lat}&z=10&pt=do`;
+ const mapUrl = `https://static-maps.yandex.ru/v1?apikey=${YANDEX_API_KEY}&l=map&ll=${data.coord.lon},${data.coord.lat}&z=10&pt=dpm2o`;
 
  el.innerHTML=`
  <h2>${data.name}</h2>
