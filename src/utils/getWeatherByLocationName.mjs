@@ -6,6 +6,6 @@ const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${lo
 
 const response = await fetch(url);
 const data = response.json();
-
+//возвращает массив данных о погоде с координатами выбранного города
 return data;
 }

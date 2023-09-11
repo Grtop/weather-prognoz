@@ -23,6 +23,7 @@ export async function runWeatherApp(el) {
   }
 
   form.addEventListener('submit', async (ev) => {
+    //событие не должно выполняться по умолчанию, вся форма не перерисовывается
     ev.preventDefault();
     getAndDrawWeather(input.value);
   }
