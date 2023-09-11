@@ -6,3 +6,5 @@ export async function getCurrentLocationName(){
   return (data.city);
 }
 
+
+
