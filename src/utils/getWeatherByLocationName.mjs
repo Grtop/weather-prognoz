@@ -1,3 +1,4 @@
+// функция ввода API ключа метеоданных и их распарсивание
 const API_KEY = "09c80b589116a40b996cf95b73271f07";
 
 export async function getWeatherByLocationName (loicationName) {

@@ -1,3 +1,4 @@
+//функция отрисовки поля ввода и поля метеоинформации
 export function drawWeatherApp(wrapperEl){
   wrapperEl.innerHTML = `
   <h1>Weater From </h1>

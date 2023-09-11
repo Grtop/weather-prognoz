@@ -1,3 +1,4 @@
+//подключение всех функций приложения
 import {drawWeatherApp} from './utils/drawWeatherApp';
 import {getCurrentLocationName} from './utils/getCurrentLocationName';
 import {getWeatherByLocationName} from './utils/getWeatherByLocationName';
@@ -20,6 +21,16 @@ export async function runWeatherApp(el) {
       infoWrapper.innerHTML='Введите правильное название города';
     }
   }
+
+  /*myMap.events.add('submit', async (ev) => {
+    // Получение координат щелчка
+    const coords = e.get('coords');
+    // Плавное перемещение центра карты на координаты щелчка
+    myMap.panTo(coords, {
+        flying: true,
+        duration: 1000
+    });
+});*/
 
   form.addEventListener('submit', async (ev) => {
     ev.preventDefault();

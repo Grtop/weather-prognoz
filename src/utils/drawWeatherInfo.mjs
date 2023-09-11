@@ -1,3 +1,4 @@
+//функция отрисовки Якарты, метки, метеоинфо и вводя API ключа
 const YANDEX_API_KEY = 'e262e3b3-7e57-43dc-8bac-de380aa7f6c1';
 
 export function drawWeatherInfo (el, data) {
