@@ -1,3 +1,4 @@
+//подключение всех функций приложения
 import {drawWeatherApp} from './utils/drawWeatherApp';
 import {getCurrentLocationName} from './utils/getCurrentLocationName';
 import {getWeatherByLocationName} from './utils/getWeatherByLocationName';
@@ -22,6 +23,7 @@ export async function runWeatherApp(el) {
   }
 
   form.addEventListener('submit', async (ev) => {
+    //событие не должно выполняться по умолчанию, вся форма не перерисовывается
     ev.preventDefault();
     getAndDrawWeather(input.value);
   }
