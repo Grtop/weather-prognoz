@@ -7,7 +7,7 @@ import {drawWeatherInfo} from './utils/drawWeatherInfo';
 
 export async function runWeatherApp(el) {
   drawWeatherApp(el);
-
+//получаем элемент DOM по селекторус
   const input = el.querySelector('input[name=cityName]');
   const form = el.querySelector('form');
   const infoWrapper = el.querySelector('.info');
