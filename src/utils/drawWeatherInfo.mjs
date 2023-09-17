@@ -6,8 +6,8 @@ export function drawWeatherInfo (el, data) {
 
  el.innerHTML=`
  <h2>${data.name}</h2>
+ <div><h2>Temp: ${data.main.temp}&#8451</h2> feels-like: ${data.main.feels_like}&#8451</div>
  <div>Weather:${data.weather[0].main} - ${data.weather[0].description}</div>
- <div>Temp: ${data.main.temp}&#8451 feels-like: ${data.main.feels_like}&#8451</div>
  <div>Humidity: ${data.main.humidity}%</div>
  <div>Wind: ${data.wind.speed} m/s ${data.wind.deg} град</div>
  <div>Visibility: ${data.visibility} m</div>
